@@ -22,3 +22,6 @@ spec:
           image: postgres:9.5-alpine
           ports:
             - containerPort: 5432
+          env:
+            - name: POSTGRES_PASSWORD
+              value: secretpassword
